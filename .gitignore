@@ -1,0 +1,15 @@
+__pycache__/
+common/
+cpu_env/
+cpu_inference/__pycache__/
+cpu_inference/photo_taken.py
+cpu_inference/photopopo1222.py
+cpu_inference/*.onnx
+cpu_inference/pose_transform_functions.py
+cpu_inference/yolosoup.py
+tinker.md
+gpu_inference/
+sample_data/
+femto_data
+test_data/
+cam2gripper.npy

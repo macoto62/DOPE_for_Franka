@@ -1,0 +1,83 @@
+## Original values (commented out)
+# image_width: 1280
+# image_height: 720
+# camera_name: femto_1_color_optical_frame
+# camera_matrix:
+#   rows: 3
+#   cols: 3
+#   # data: [745.4786987304688, 0.0, 358.9281005859375, 0.0, 745.0728149414062, 361.557373046875, 0.0, 0.0, 1.0]
+#   data: [605.5185546875, 0.0, 319.2057189941406, 0.0, 605.1221313476562, 243.55325317382812, 0.0, 0.0, 1.0]
+# distortion_model: rational_polynomial
+# distortion_coefficients:
+#   rows: 1
+#   cols: 8
+#   data: [0.07510950416326523, -0.10347876697778702, 0.0006440673605538905, -0.00018866942264139652, 0.04201992228627205, 0.0, 0.0, 0.0]
+# rectification_matrix:
+#   rows: 3
+#   cols: 3
+#   data: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+# projection_matrix:
+#   rows: 3
+#   cols: 4
+#   data: [745.4786987304688, 0.0, 358.9281005859375, 0.0, 0.0, 745.0728149414062, 361.557373046875, 0.0, 0.0, 0.0, 1.0, 0.0]
+
+## Camera info taken from `rostopic echo /cam_1/aligned_depth_to_color/camera_info` (single message)
+# image_width: 1280
+# image_height: 720
+# camera_name: cam_1_color_optical_frame
+
+# camera_matrix:
+#   rows: 3
+#   cols: 3
+#   # K (row-major): [fx, 0, cx, 0, fy, cy, 0, 0, 1]
+#   #data: [605.5185546875, 0.0, 239.2057189941406, 0.0, 605.1221313476562, 243.55325317382812, 0.0, 0.0, 1.0]
+#   data: [908.27783203125, 0.0, 358.80859375, 0.0, 907.6832275390625, 365.3298645019531, 0.0, 0.0, 1.0]
+
+# distortion_model: plumb_bob
+# distortion_coefficients:
+#   rows: 1
+#   cols: 5
+#   # D: [k1, k2, t1, t2, k3]
+#   data: [0.0, 0.0, 0.0, 0.0, 0.0]
+
+# rectification_matrix:
+#   rows: 3
+#   cols: 3
+#   data: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+
+# projection_matrix:
+#   rows: 3
+#   cols: 4
+#   # P (row-major): [fx, 0, cx, Tx, 0, fy, cy, Ty, 0, 0, 1, 0]
+#   #data: [605.5185546875, 0.0, 239.2057189941406, 0.0, 0.0, 605.1221313476562, 243.55325317382812, 0.0, 0.0, 0.0, 1.0, 0.0]
+#   data: [908.27783203125, 0.0, 358.80859375, 0.0, 0.0, 907.6832275390625, 365.3298645019531, 0.0, 0.0, 0.0, 1.0, 0.0]
+
+image_width: 640
+image_height: 480
+camera_name: cam_1_color_optical_frame
+
+camera_matrix:
+  rows: 3
+  cols: 3
+  # K (row-major): [fx, 0, cx, 0, fy, cy, 0, 0, 1]
+  data: [605.5185546875, 0.0, 239.2057189941406, 0.0, 605.1221313476562, 243.55325317382812, 0.0, 0.0, 1.0]
+  #data: [908.27783203125, 0.0, 358.80859375, 0.0, 907.6832275390625, 365.3298645019531, 0.0, 0.0, 1.0]
+
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  # D: [k1, k2, t1, t2, k3]
+  data: [0.0, 0.0, 0.0, 0.0, 0.0]
+
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+
+projection_matrix:
+  rows: 3
+  cols: 4
+  # P (row-major): [fx, 0, cx, Tx, 0, fy, cy, Ty, 0, 0, 1, 0]
+  data: [605.5185546875, 0.0, 239.2057189941406, 0.0, 0.0, 605.1221313476562, 243.55325317382812, 0.0, 0.0, 0.0, 1.0, 0.0]
+  #data: [908.27783203125, 0.0, 358.80859375, 0.0, 0.0, 907.6832275390625, 365.3298645019531, 0.0, 0.0, 0.0, 1.0, 0.0]
